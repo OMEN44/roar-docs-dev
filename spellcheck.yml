@@ -2,8 +2,6 @@ matrix:
   - name: Markdown
     aspell:
       lang: en
-    dictionary:
-      output: .wordlist.dic
     pipeline:
       - pyspelling.filters.html:
           comments: false
