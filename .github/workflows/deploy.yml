@@ -29,10 +29,6 @@ jobs:
       - name: Spell Check Repo
         uses: crate-ci/typos@v1.48.0
         with:
-          files: |
-            **/*.md
-            **/*.yml
-            **/*.yaml
           write_changes: true
 
       - uses: cachix/install-nix-action@v31.10.6
