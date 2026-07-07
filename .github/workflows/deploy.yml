@@ -27,9 +27,12 @@ jobs:
       # checkout repo
       - uses: actions/checkout@v7
       - name: Spell Check Repo
-        uses: crate-ci/typos@v1.48.0
+        uses: wow-actions/spell-checker@v1
         with:
-          write_changes: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          include: |
+            **/*.md
+            **/*.txt
 
       - uses: cachix/install-nix-action@v31.10.6
       - uses: cachix/cachix-action@v17
