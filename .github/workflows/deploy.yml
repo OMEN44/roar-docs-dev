@@ -29,7 +29,7 @@ jobs:
       - name: md-spellcheck-action
         uses: matheus23/md-spellcheck-action@v4.2.2
         with:
-          files-to-check: "*.md"
+          files-to-check: "**.md"
           words-to-ignore-file: ./words-to-ignore.txt
 
       - uses: cachix/install-nix-action@v31.10.6
