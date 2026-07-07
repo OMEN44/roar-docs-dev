@@ -11,4 +11,9 @@ sort:
 
 # The nav section is the main purpose of this plugin. We do not use it since in favour
 # of ordering files manually and setting titles so the file structure reflects what is rendered.
-# nav:
+nav:
+  - Home:
+      - Welcome: index.md
+      - 01-home/*
+  - 02-perseus-v3
+  - 03-archive
