@@ -27,12 +27,7 @@ jobs:
       # checkout repo
       - uses: actions/checkout@v7
       - name: Spell Check Repo
-        uses: wow-actions/spell-checker@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          include: |
-            **/*.md
-            **/*.txt
+        uses: igsekor/pyspelling-any@v0.0.2
 
       - uses: cachix/install-nix-action@v31.10.6
       - uses: cachix/cachix-action@v17
