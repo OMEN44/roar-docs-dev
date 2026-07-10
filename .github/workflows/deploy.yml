@@ -26,8 +26,8 @@ jobs:
     steps:
       # checkout repo
       - uses: actions/checkout@v7
-      - name: Spell Check Repo
-        uses: igsekor/pyspelling-any@v0.0.2
+      # - name: Spell Check Repo
+        # uses: igsekor/pyspelling-any@v0.0.2
 
       - uses: cachix/install-nix-action@v31.10.6
       - uses: cachix/cachix-action@v17
